@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicki Minaj Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="assets/highscores/highscores.html" class="scores">View Highscores</a>
+        <p class="time-indicator">Time: <span id="countdown">0</span></p>
+    </header>
+
+    <main class="frame">
+
+        <section id="home-page" class="start">
+            <h1>Coding Quiz</h1>
+            <p>
+           This quiz is timed and for every wrong question you will be deducted by 10 seconds, and for every right answer it will add 10 seconds to your score. You have 2 minutes to complete it.
+           Your score is based on the amount of time it took you to answer these questions.
+            </p>
+            <button id="start">Start Quiz</button>
+        </section>
+
+        <section id="question" class="hidden">
+            <p></p>
+            <div id="answers"></div>
+        </section>
+
+        <section id="finale" class="hidden">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="score-page"></span>.</p>
+            <p>
+            Enter initials: <input type="text" id="name">
+            <button id="submit">Submit</button>
+            </p>
+        </section>
+
+        <div id="indicator" class="hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
